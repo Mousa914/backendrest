@@ -33,7 +33,7 @@ public class RestaurantsApplication {
 			{
 				repo.deleteAll();
 				List<Restaurant> resturant = rest.loadCSV();
-				for(int i = 1 ; i < resturant.size() ; i++)
+				for(int i = 0 ; i < resturant.size() ; i++)
 				{
 					repo.save(resturant.get(i));
 				}
